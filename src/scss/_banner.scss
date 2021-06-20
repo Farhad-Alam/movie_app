@@ -1,0 +1,49 @@
+.banner {
+  height: 35rem;
+  object-fit: contain;
+
+  .banner_info {
+    padding: 8rem 0;
+    width: 30rem;
+    line-height: 1.5;
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin: 0 0 1.5rem 0;
+    }
+    .btn_container {
+      .button {
+        color: white;
+        background-color: rgba(50, 50, 50, 0.5);
+        border: none;
+        outline: none;
+        padding: 0.4rem 1.6rem;
+        font-weight: bold;
+
+        &:hover {
+          color: black;
+          background-color: #e6e6e6;
+          transition: 0.3s ease-in-out;
+        }
+
+        &:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .overview {
+    text-shadow: 1px 1px 5px black;
+  }
+
+  .fadein {
+    height: 5.7rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+}

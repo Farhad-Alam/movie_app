@@ -1,0 +1,76 @@
+@import "mixin";
+@import "nav";
+@import "banner";
+
+body {
+  background-color: #111;
+  color: white;
+}
+h1 {
+  text-shadow: 1px 1px 5px #0d6efd;
+}
+
+.movies_info {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  .m_img {
+    position: relative;
+    transition: 2s;
+
+    .movies_img {
+      width: 18rem;
+      height: 15rem;
+      padding: 1rem 0;
+      object-fit: contain;
+      transition: all 0.4s;
+    }
+
+    .info_list {
+      width: 18rem;
+      padding: 0 1rem;
+      text-align: left !important;
+      background-image: linear-gradient(
+        to top,
+        #111,
+        rgba(37, 37, 37, 0.61),
+        transparent
+      );
+      position: absolute;
+      left: 1rem;
+      bottom: 3.4rem;
+      transform: translateX(19rem);
+      height: 9rem;
+      opacity: 0;
+    }
+
+    &:hover .info_list {
+      transform: translateX(0);
+      transition: 0.4s;
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+}
+.movies_info::-webkit-scrollbar {
+  display: none;
+}
+
+.m_trend {
+  height: 25rem !important;
+}
+
+.hero {
+  padding-top: 5rem;
+}
+
+// // // // header
+
+.l_list {
+  bottom: 2rem !important;
+  width: 16rem !important;
+  padding: 0px 1rem !important;
+  height: 12rem !important;
+  left: 37px !important;
+}
